@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-height: 3000px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.launching-soon-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.banner {
+  background-image: url(assets/background.svg);
+  background-repeat: no-repeat;
+}
+
+.companies-logos-section {
+  display: flex;
+}
+
+.nfts-display {
+  display: flex;
+  flex-direction: row;
+}
+
+table {
+  width: 100%;
+  background-color: #eeeeee;
+  border-radius: 0px 0px 10px 10px;
+  margin-top: -4px;
+}
+
+footer {
+  display: flex;
+}
+
+.footer-logo-section {
+  display: block;
+}
