@@ -9,7 +9,7 @@ body {
   max-width: 428px;
   max-height: 3000px;
   font-family: "Inter", sans-serif;
-  /* margin: 0 auto; */
+  margin: 0 auto;
 }
 nav {
   display: flex;
@@ -42,16 +42,18 @@ header section {
 }
 
 .launching-soon-section h1 {
-  width: 70%;
   font-weight: bold;
   font-size: 48px;
 }
 
 .launching-soon-section p {
-  width: 70%;
   color: #555555;
   font-size: 20px;
   line-height: 30px;
+}
+.launching-soon-section-top h1,
+p {
+  width: 70%;
 }
 
 /* #pink-robot-picture {
@@ -85,7 +87,8 @@ button {
   background-image: url(assets/background.svg);
   background-repeat: no-repeat;
   background-position: top -10px left -10px;
-  /* background-size: 120% 900%; */
+  background-size: cover;
+  margin-bottom: 3rem;
 }
 
 .banner h1 {
@@ -96,6 +99,7 @@ button {
 }
 
 .banner p {
+  width: 100%;
   font-size: 20px;
   padding: 2rem;
   line-height: 30px;
@@ -116,9 +120,27 @@ button {
   display: none;
 }
 
+.le-super-rare-auction-section {
+  margin: 0 2rem 2rem;
+}
+
+.le-super-rare-auction-section h1 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 3rem;
+}
+
+.le-super-rare-auction-section p {
+  font-size: 20px;
+  line-height: 30px;
+}
 .nfts-display {
   display: flex;
   flex-direction: row;
+  border-bottom: #eeeeee 2px solid;
+}
+.nfts-display div {
+  margin: 0 0 6rem 2rem;
 }
 
 table {
@@ -128,6 +150,104 @@ table {
   margin-top: -4px;
 }
 
+th:nth-child(odd) {
+  color: #ff8139;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 1rem;
+}
+th:nth-child(even) {
+  color: #777777;
+  text-transform: uppercase;
+  text-align: right;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 1rem;
+}
+tr:nth-child(even) {
+  color: #111111;
+  font-size: 20px;
+  font-weight: 500;
+}
+tr:nth-child(odd) {
+  color: #777777;
+  font-size: 18px;
+  font-weight: 500;
+}
+tr td {
+  padding: 0 1rem 0.8rem;
+}
+tr td:nth-child(odd) {
+  text-align: left;
+}
+tr td:nth-child(even) {
+  text-align: right;
+}
+
+.launching-soon-section-bottom {
+  /* margin-top: 4rem; */
+  padding-top: 3rem;
+  background-image: url(assets/upsell-footer-image.svg);
+  background-repeat: no-repeat;
+  background-size: 45%;
+  /* background-position: 260% top; */
+  background-position: bottom right -20px;
+  /* border-bottom: #eeeeee 2px solid; */
+}
+.launching-soon-section-bottom h1,
+p {
+  width: 55%;
+}
+
 footer {
   display: flex;
+  flex-wrap: wrap;
+  border-top: #eeeeee 2px solid;
+}
+
+.footer-logo-section {
+  width: 100%;
+  padding-left: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer h5 {
+  font-size: 20px;
+  font-weight: 500;
+}
+footer i {
+  color: #999999;
+  padding-right: 0.7rem;
+}
+footer div {
+  width: 50%;
+}
+
+ul {
+  list-style-type: none;
+}
+ul li:first-of-type {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 19px;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+ul li:not(:first-of-type) {
+  font-size: 20px;
+  padding-bottom: 0.7rem;
+}
+li a {
+  text-decoration: none;
+}
+footer p {
+  width: 100%;
+  color: #999999;
+  font-size: 20px;
+  padding-left: 2rem;
 }
