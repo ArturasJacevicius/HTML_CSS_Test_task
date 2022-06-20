@@ -6,7 +6,7 @@
 }
 
 body {
-  width: 428px;
+  max-width: 428px;
   max-height: 3000px;
   font-family: "Inter", sans-serif;
   /* margin: 0 auto; */
@@ -80,19 +80,12 @@ button {
 .banner {
   display: flex;
   flex-direction: column;
-  padding-top: 5rem;
+  padding-top: 6rem;
   padding-bottom: 2rem;
   background-image: url(assets/background.svg);
   background-repeat: no-repeat;
   background-position: top -10px left -10px;
   /* background-size: 120% 900%; */
-}
-
-.banner p {
-  font-size: 20px;
-  padding: 2rem;
-  line-height: 30px;
-  margin: 0;
 }
 
 .banner h1 {
@@ -102,8 +95,25 @@ button {
   margin: 0;
 }
 
+.banner p {
+  font-size: 20px;
+  padding: 2rem;
+  line-height: 30px;
+  margin: 0;
+}
+
 .companies-logos-section {
   display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.companies-logos-section img {
+  max-width: 50%;
+  padding: 0 2rem 2rem;
+}
+
+#boomerang-logo {
+  display: none;
 }
 
 .nfts-display {
