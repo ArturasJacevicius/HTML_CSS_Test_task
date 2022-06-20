@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+#pink-robot-image,
+#woman-in-green-image,
+#footer-launching-august-2022-text,
+#opendoor-logo,
+.navbar-links {
+  display: none;
+}
+
+body {
+  max-width: 1440px;
+  max-height: 3300px;
+  font-family: "Inter", sans-serif;
+  margin: 0 auto;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 2rem 0 2rem;
+}
+
+.launching-soon-section-text-area {
+  padding-top: 4rem;
+  background-image: url(assets/graphic.svg);
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: top right -170px;
+}
+
+.launching-soon-section {
+  display: flex;
+  flex-direction: row;
+  margin-left: 2rem;
+  font-size: 1rem;
+}
+
+.launching-soon-section h5 {
+  font-size: 1rem;
+  color: #ff3998;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.launching-soon-section h1 {
+  font-weight: bold;
+  font-size: 48px;
+}
+
+.launching-soon-section p {
+  color: #555555;
+  font-size: 20px;
+  line-height: 30px;
+}
+.launching-soon-section-top h1,
+.launching-soon-section-top p {
+  width: 70%;
+}
+
+button {
+  font-size: 20px;
+  font-weight: 600;
+  width: 180px;
+  height: 70px;
+  margin-bottom: 3rem;
+  border: double 2px transparent;
+  border-radius: 50px;
+  background-image: linear-gradient(white, white),
+    radial-gradient(circle at top left, #ff546a, #a9cb84);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+  background-image: url(assets/background.svg);
+  background-repeat: no-repeat;
+  background-position: top -10px left -10px;
+  background-size: cover;
+  margin-bottom: 3rem;
+}
+
+.banner h1 {
+  font-size: 40px;
+  font-weight: 500;
+  padding-left: 2rem;
+  margin: 0;
+}
+
+.banner p {
+  width: 100%;
+  font-size: 20px;
+  padding: 2rem;
+  line-height: 30px;
+  margin: 0;
+}
+
+.companies-logos-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.companies-logos-section img {
+  max-width: 50%;
+  padding: 0 2rem 2rem;
+}
+
+.le-super-rare-auction-section {
+  margin: 0 2rem 2rem;
+}
+
+.le-super-rare-auction-section h1 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 3rem;
+}
+
+.le-super-rare-auction-section p {
+  font-size: 20px;
+  line-height: 30px;
+}
+.le-super-rare-auction-section p a {
+  color: #555555;
+}
+
+.nfts-display {
+  display: flex;
+  flex-direction: row;
+  border-bottom: #eeeeee 2px solid;
+}
+.nfts-display div {
+  margin: 0 0 6rem 2rem;
+}
+
+table {
+  width: 100%;
+  background-color: #eeeeee;
+  border-radius: 0px 0px 10px 10px;
+  margin-top: -4px;
+}
+
+th:nth-child(odd) {
+  color: #ff8139;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 1rem;
+}
+th:nth-child(even) {
+  color: #777777;
+  text-transform: uppercase;
+  text-align: right;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 1rem;
+}
+tr:nth-child(even) {
+  color: #111111;
+  font-size: 20px;
+  font-weight: 500;
+}
+tr:nth-child(odd) {
+  color: #777777;
+  font-size: 18px;
+  font-weight: 500;
+}
+tr td {
+  padding: 0 1rem 0.8rem;
+}
+tr td:nth-child(odd) {
+  text-align: left;
+}
+tr td:nth-child(even) {
+  text-align: right;
+}
+
+.launching-soon-section-bottom {
+  padding-top: 3rem;
+  background-image: url(assets/upsell-footer-image.svg);
+  background-repeat: no-repeat;
+  background-size: 45%;
+
+  background-position: bottom right -20px;
+}
+.launching-soon-section-bottom h1,
+.launching-soon-section-bottom p {
+  width: 55%;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: #eeeeee 2px solid;
+}
+
+.footer-logo-section {
+  width: 100%;
+  padding-left: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer h5 {
+  font-size: 20px;
+  font-weight: 500;
+}
+footer i {
+  color: #999999;
+  padding-right: 0.7rem;
+}
+.footer-links-group-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-links-group-section div {
+  width: 50%;
+}
+
+ul {
+  list-style-type: none;
+}
+ul li:first-of-type {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 19px;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+ul li:not(:first-of-type) {
+  font-size: 20px;
+  padding-bottom: 0.7rem;
+}
+li a {
+  text-decoration: none;
+}
+.page-bottom-text p {
+  color: #999999;
+  font-size: 20px;
+  padding-left: 2rem;
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    max-width: 90vw;
+    margin: 0 auto;
+  }
+  .fa-bars {
+    display: none;
+  }
+  .navbar-links {
+    display: flex;
+  }
+  .navbar-links a {
+    text-decoration: none;
+    color: #555555;
+    font-size: 20px;
+    padding-left: 2rem;
+    padding-top: 0.5rem;
+  }
+  .navbar-links a:last-child {
+    color: #ff3998;
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #pink-robot-image {
+    max-width: 60%;
+    max-height: 50%;
+    display: flex;
+    justify-self: center;
+  }
+  .launching-soon-section-text-area {
+    max-width: 90vw;
+    background: none;
+  }
+  #opendoor-logo {
+    display: flex;
+  }
+
+  .launching-soon-section-top h1,
+  .launching-soon-section-top p {
+    width: 50%;
+  }
+  .banner {
+    background-position: center;
+    background-size: cover;
+  }
+  .companies-logos-section {
+    justify-content: space-between;
+  }
+  .companies-logos-section img {
+    max-width: 20%;
+  }
+  .nfts-display {
+    justify-content: space-between;
+  }
+  .le-super-rare-auction-section p {
+    max-width: 100vw;
+    display: block;
+  }
+  #woman-in-green-image {
+    display: flex;
+    justify-self: center;
+  }
+  .launching-soon-section-bottom {
+    background: none;
+    display: flex;
+    flex-direction: row;
+  }
+  footer {
+    justify-content: space-between;
+  }
+  .footer-logo-section {
+    max-width: 40%;
+  }
+  .footer-links-group-section {
+    max-width: 60%;
+    flex-wrap: nowrap;
+  }
+  .footer-links-group-section div {
+    padding-left: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .page-bottom-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #footer-launching-august-2022-text {
+    display: flex;
+  }
+}
